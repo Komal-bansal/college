@@ -67,6 +67,8 @@ header{
   margin-left: 10px;
   font-size: 40px;
   font-weight: 800;
+  font-family: serif;
+  color: #865acf;
 }
 .logotype-full{
   text-align: right;
@@ -221,4 +223,25 @@ marquee{
 }
 .quick>a,h3{
   display: block;
+}
+.custom-icon{
+  background-color:#cb2d3e !important;
+  color: white;
+  
+}
+
+.navbar-nav>li>a{
+  font-size: 17px;
+  color: white;
+  padding: 0px;
+}
+a:hover{
+  border-radius: 6px;
+  background-color: #cb2d3e !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #cb2d3e !important;
+    border-color: #337ab7;
+    border-radius: 6px;
 }
