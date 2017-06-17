@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BpitWebsite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+<script src="https://use.fontawesome.com/8f988d3075.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="js/app.js"></script>
+<script src="pages/ui-routes.js"></script>
+
+</head>
+<body ng-app="bpit">
+<div class="functions">
+  <span>{{days[date.getDay()]}}, {{date.getDate()}} {{month[date.getMonth()]}} {{date.getFullYear()}}</span>
+  <span>{{h}}:{{m}}:{{s}}</span>
+  <span>Login</span>
+</div>
+<div class="site-wrapper">
+  <div class="head-content">
+    <header>
+      <div class="branding">
+        <div class="main-brand">
+          <div class="logo"></div>
+          <div class="logotype-short">BPIT</div>
+        </div>
+        <div class="logotype-full">
+          <b>Bhagwan Parshuram Institute of Technology</b>
+          <span>Affiliated To GGSIPU, Delhi
+            A unit of Bhartiya Brahmin Charitable Trust
+            ISO 9001:2008 Certified</span>
+        </div>
+      </div>
+      <div class="search-bar">
+        <a href="#notices" class="notice-live"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>Notices</a>
+        <i class="fa fa-search" aria-hidden="true"></i><span>Search</span>
+      </div>
+      <nav>
+        <div class="menu-item">
+          <a ui-sref="home">Home</a>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="about">About us</a>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="academics">Academics</a>
+          <div class="drop">
+            <a class="drop-item" ui-sref=".postGrad">Post Graduate</a>
+            <a class="drop-item" ui-sref=".underGrad">Under Graduate</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="departments">Departments</a>
+          <div class="drop">
+            <a class="drop-item" ui-sref=".appliedScience">Applied Sciences</a>
+            <a class="drop-item" ui-sref=".cs">Computer Science Engineering</a>
+            <a class="drop-item" ui-sref=".it">Information technology Engineering</a>
+            <a class="drop-item" ui-sref=".ece">Electronics and Communication Engineering</a>
+            <a class="drop-item" ui-sref=".eee">Electronics and Electrical Engineering</a>
+            <a class="drop-item" ui-sref=".ba">School of Business Administration</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="facilities">Facilities</a>
+          <div class="drop">
+            <a class="drop-item" ui-sref=".library">Library</a>
+            <a class="drop-item" ui-sref=".hostel">Hostel</a>
+            <a class="drop-item" ui-sref=".medicalRoom">Medical Room</a>
+            <a class="drop-item" ui-sref=".bookBank">Book Bank</a>
+            <a class="drop-item" ui-sref=".seminarHall">Seminar Hall</a>
+            <a class="drop-item" ui-sref=".sportsRoom">Sports room</a>
+            <a class="drop-item" ui-sref=".canteen">Canteen</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="placements">Placements</a>
+          <div class="drop">
+            <a class="drop-item" ui-sref=".team">Team</a>
+            <a class="drop-item" ui-sref=".training">Training</a>
+            <a class="drop-item" ui-sref=".recruiters">Our Recruiters</a>
+            <a class="drop-item" ui-sref=".etas">Expert Talks and Seminars</a>
+            <a class="drop-item" ui-sref=".itaw">Industrial Tours and Workshops</a>
+            <a class="drop-item" ui-sref=".losp">List of students placed</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="studentLife">Student Life</a>
+          <div class="drop">
+            <a class="drop-item" ui-sref=".examinations">Examinations</a>
+            <a class="drop-item" ui-sref=".events">Events</a>
+            <a class="drop-item" ui-sref=".publications">Publications</a>
+            <a class="drop-item" ui-sref=".projects">Projects</a>
+            <a class="drop-item" ui-sref=".publications">Publications</a>
+            <a class="drop-item" ui-sref=".achievements">Achievements</a>
+            <a class="drop-item" ui-sref=".societies">Societies</a>
+            <a class="drop-item" ui-sref=".sports">Sports</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="nirf">NIRF</a>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="disclosures">Disclosures</a>
+        </div>
+        <div class="menu-item">
+          <a ui-sref="contact">Contact Us</a>
+        </div>
+      </nav>
+      <marquee>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</marquee>
+    </header>
+    <div class="intro">
+      <div class="intro-content">
+        <h2>Welcome to BPIT</h2>
+        <p>The institute is situated at a prime location on Dr. K.N. Katju Marg, which separates Sector 11 and Sector 17 in Rohini, North Delhi. Adjacent to BPIT is the MCD Building, which houses Railway Reservation Centre. It is well connected with public transport system like DTC buses and metro shuttles. Rithala metro station on metro line 1 (Red Line) and the Rohini Sector-18/19 metro station on metro line 2 (Yellow Line) are at a distance of 4.6 km & 4.3 km respectively.</p>
+        <div class="learn-button">
+          <span>Learn more</span>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="events">
+    <h2>EVENTS</h2>
+    <div class="events-list">
+      <div class="events-post">
+        <div class="date">1st April 2017</div>
+        <div class="events-content">
+          <a href="#">Corona: Annual SuperFest of BPIT</a>
+        </div>
+      </div>
+      <div class="events-post">
+        <div class="date">1st April 2017</div>
+        <div class="events-content">
+          <a href="#">Corona: Annual SuperFest of BPIT</a>
+        </div>
+      </div>
+      <div class="events-post">
+        <div class="date">1st April 2017</div>
+        <div class="events-content">
+          <a href="#">Corona: Annual SuperFest of BPIT</a>
+        </div>
+      </div>
+      <div class="events-post">
+        <div class="date">1st April 2017</div>
+        <div class="events-content">
+          <a href="#">Corona: Annual SuperFest of BPIT</a>
+        </div>
+      </div>
+      <div class="events-post">
+        <div class="date">1st April 2017</div>
+        <div class="events-content">
+          <a href="#">Corona: Annual SuperFest of BPIT</a>
+        </div>
+      </div>
+      <div class="events-post">
+        <div class="date">1st April 2017</div>
+        <div class="events-content">
+          <a href="#">Corona: Annual SuperFest of BPIT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="others">
+     <div class="news">
+      <h2>NEWS</h2>
+      <div class="news-list">
+        <p class="news-item">Vacancy for the post for Registrar/ Assistant Registrar</p>
+        <p class="news-item">Vittiya Saksharata Abhiyan (VISAKA) Volunteers from BPIT
+        </p>
+        <p class="news-item">Smart India Hackathon 2017</p>
+        <p class="news-item">Pool Campus Drive by M/s Sopra Steria on 22nd Feb, 2016 at BPIT</p>
+      </div>
+    </div>
+    <div class="notices" id="notices">
+      <h2>NOTICES</h2>
+      <div class="notices-list">
+        <p class="notices-item">Scholarship Schemes</p>
+        <p class="notices-item">Action Plan to propogate idea of digital payment system
+        </p>
+        <p class="notices-">Notice for Return of Book Bank Books</p>
+        <p class="notices-">Notice for Reappear Students</p>
+        <p class="notices-">University notice regarding Mercy Chance Meeting</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="quick">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">GGSIPIU Website</a>
+      <a href="#">Recruitment</a>
+      <a href="#">Remote Centre IIT Bombay/Kharagpur</a>
+      <a href="#">International Journal</a>
+      <a href="#">Photo GAllery</a>
+    </div>
+    <span>&copy; Bhagwan Parshuram Institute of Tecnology</span>
+  </div>
+
+</div>
+
+<ui-view></ui-view>
+
+</body>
+</html>
